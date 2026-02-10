@@ -219,6 +219,7 @@ jobs:
           now_line \
           watch_title \
           negative_insulin 
+          sed -i 's/static let bolusPartialApplicationFactor = 0.4/static let bolusPartialApplicationFactor = 0.2/' Loop/Loop/Models/LoopConstants.swift 
 
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
